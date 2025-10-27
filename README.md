@@ -1,5 +1,5 @@
 # META-SCHOOL-VR 🎓
-
+LIVE DEMO: https://smart-board-metaverse.vercel.app
 DEMO VIDEO : https://www.youtube.com/watch?v=SNPmQ05y8TQ
 
 > An AI-powered immersive learning platform combining Generative AI with Metaverse technology to revolutionize education through interactive VR experiences.
@@ -119,50 +119,7 @@ Git/GitHub (Version Control)
 - Firebase account
 - API Keys: OpenAI, ElevenLabs, ConvAI
 
-### Installation
 
-#### 1. Clone Repository
-```bash
-git clone https://github.com/teamcheatcode/meta-school-vr.git
-cd meta-school-vr
-```
-
-#### 2. Web Application Setup
-```bash
-cd web-app
-npm install
-# or
-yarn install
-
-# Create .env file
-cp .env.example .env
-# Add your API keys and Firebase config
-
-npm run dev
-```
-
-#### 3. Backend Setup
-```bash
-cd backend
-pip install -r requirements.txt
-
-# Configure environment variables
-cp .env.example .env
-# Add API keys: OPENAI_API_KEY, ELEVENLABS_API_KEY, etc.
-
-python app.py
-```
-
-#### 4. Unity VR Setup
-```bash
-# Open Unity Hub
-# Add project from /unity-vr-app directory
-# Install required packages via Package Manager:
-#   - XR Interaction Toolkit
-#   - TextMeshPro
-# Configure ConvAI SDK credentials
-# Build for your target VR platform (Meta Quest, PCVR, etc.)
-```
 
 ---
 
@@ -244,36 +201,7 @@ PORT=5000
 
 ---
 
-## 🔌 API Endpoints
 
-### Authentication
-```
-POST   /api/auth/register      - User registration
-POST   /api/auth/login         - User login
-GET    /api/auth/profile       - Get user profile
-```
-
-### AI Services
-```
-POST   /api/ai/generate-lesson    - Generate AI video lesson
-POST   /api/ai/chat               - Interact with AI teacher
-POST   /api/ai/voice-synthesis    - Generate audio content
-GET    /api/ai/languages          - Get supported languages
-```
-
-### Analytics
-```
-GET    /api/analytics/student/:id - Get student performance data
-POST   /api/analytics/track       - Track learning activity
-GET    /api/analytics/insights    - Get AI-driven insights
-```
-
-### Content
-```
-GET    /api/content/lessons       - Fetch available lessons
-GET    /api/content/games         - Get gamified learning modules
-GET    /api/content/metaverse     - Access metaverse environments
-```
 
 ---
 
