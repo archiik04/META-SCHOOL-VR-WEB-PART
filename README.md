@@ -1,5 +1,6 @@
 # META-SCHOOL-VR 🎓
 LIVE DEMO: https://smart-board-metaverse.vercel.app
+
 DEMO VIDEO : https://www.youtube.com/watch?v=SNPmQ05y8TQ
 
 > An AI-powered immersive learning platform combining Generative AI with Metaverse technology to revolutionize education through interactive VR experiences.
