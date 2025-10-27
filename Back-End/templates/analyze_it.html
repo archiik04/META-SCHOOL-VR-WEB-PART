@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Track - Video Analysis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/style_analysis.css">
+</head>
+<body>
+  <!-- Dynamic Background Effects -->
+  <div class="space-bg"></div>
+  <div class="nebula"></div>
+  <div class="stars-container" id="starsContainer"></div>
+
+  <!-- Main Content -->
+  <div class="container visible">
+    <h1 class="neon-glow neon-purple">FOCUS TRACK</h1>
+    <p class="subtitle">AI-Powered Study Session Analyzer</p>
+
+    <!-- Feature Description -->
+    <div class="feature-description glassmorphism">
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">👁️</div>
+          <h3>Attention Tracking</h3>
+          <p>Measures your eye contact with study materials to calculate focus percentage</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Distraction Alerts</h3>
+          <p>Identifies when you look away from your work or use your phone</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Performance Analytics</h3>
+          <p>Generates visual reports of your concentration patterns over time</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💡</div>
+          <h3>Smart Recommendations</h3>
+          <p>Provides personalized tips to improve your study efficiency</p>
+        </div>
+      </div>
+      <div class="how-to-use">
+        <h3 class="neon-glow neon-blue">How To Use:</h3>
+        <ol>
+          <li>Record your study session (webcam or phone camera)</li>
+          <li>Upload the video file</li>
+          <li>Get instant focus analysis</li>
+          <li>Apply the insights to boost productivity</li>
+        </ol>
+      </div>
+    </div>
+    
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <input type="file" id="video-upload" accept="video/*" />
+      <label for="video-upload" class="upload-label glassmorphism">
+        <span id="upload-text">Upload Study Session Video</span>
+        <span id="upload-icon">📁</span>
+      </label>
+    </div>
+
+    <!-- Rest of your existing HTML remains unchanged -->
+    <div id="video-preview" class="video-preview hidden">
+      <video id="preview-video" controls>
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Analyzing your focus patterns...</p>
+    </div>
+
+    <!-- Results Section -->
+    <div id="results" class="results hidden">
+      <h2 class="neon-glow neon-pink">Analysis Results</h2>
+      <p>Total Duration: <span id="total-duration">0</span> seconds</p>
+      <ul id="activities-list"></ul>
+    </div>
+
+    <!-- Error Section -->
+    <div id="error" class="error hidden">
+      <p>⚠ <span id="error-message"></span></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="../static/script_analysis.js"></script>
+</body>
+</html>
